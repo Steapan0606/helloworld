@@ -3,15 +3,9 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
-            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "command": "make",
             "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-shared",
-                "-o",
-                "-L",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                
             ],
             "options": {
                 "cwd": "${fileDirname}"

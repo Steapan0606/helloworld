@@ -1,4 +1,4 @@
-// main.cpp
+
 #include <iostream>
 
 #ifdef _WIN32
@@ -8,15 +8,13 @@
 #endif
 
 extern "C" {
-    IMPORT void hello();
-    IMPORT int add(int a, int b);
+    IMPORT void greet();
+    IMPORT int multiply(int, int);
 }
 
 int main() {
-    hello();
-    
-    int result = add(5, 3);
-    std::cout << "5 + 3 = " << result << std::endl;
-
-    return 0; 
+    greet();
+    int product = multiply(7, 8);
+    std::cout << "7 * 8 = " << product << std::endl;
+    return 0;
 }

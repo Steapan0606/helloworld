@@ -1,4 +1,4 @@
-// example.cpp
+
 #include <iostream>
 
 #ifdef _WIN32
@@ -8,11 +8,11 @@
 #endif
 
 extern "C" {
-    EXPORT void hello() {
-        std::cout << "Hello from the DLL!" << std::endl;
+    EXPORT void greet() {
+        std::cout << "Welcome from the DLL!" << std::endl;
     }
 
-    EXPORT int add(int a, int b) {
-        return a + b;
+    EXPORT int multiply(int a, int b) {
+        return a * b;
     }
 }
